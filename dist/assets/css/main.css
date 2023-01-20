@@ -180,7 +180,7 @@ body {
     background-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .burger {
         display: flex;
     }
@@ -244,6 +244,18 @@ body.dark .header {
     background-color: rgb(31, 41, 55);
 }
 
+body.dark .header__inner .burger span {
+    background-color: rgb(202, 197, 197);
+}
+
+body.dark .header__inner .burger span::after, body.dark .header__inner .burger span::before {
+    background-color: rgb(202, 197, 197);
+}
+
+body.dark .header__inner .burger.active span {
+    background-color: transparent;
+}
+
 body.dark .header__logo {
     filter: invert(0.9);
 }
@@ -299,6 +311,8 @@ body.dark .header__register-btn:hover {
 
 body {
     transition: 0.3s ease-in-out all;
+    position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -330,7 +344,7 @@ body {
     gap: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .header__buttons {
         display: none;
     }
@@ -375,7 +389,7 @@ body {
     transform: translateX(0);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .menu {
         position: absolute;
         right: 0;
@@ -400,7 +414,7 @@ body {
     gap: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .menu__body {
         flex-direction: column;
         width: 100%;
