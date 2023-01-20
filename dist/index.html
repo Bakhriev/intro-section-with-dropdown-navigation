@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="overlay"></div>
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<a href="#" class="header__logo"
+							><img src="./assets/img/logo.svg" alt="logo"
+						/></a>
+						<div class="header__navigation">
+							<nav class="header__menu menu">
+								<ul class="menu__body">
+									<li class="dropdown" data-dropdown>
+										<button class="dropdown-toggle" data-dropdown-button>
+											Features
+										</button>
+										<ul class="sub-menu">
+											<li class="sub-menu__item todo">
+												<a href="#">Todo List</a>
+											</li>
+											<li class="sub-menu__item calendar"><a href="#">Calendar</a></li>
+											<li class="sub-menu__item reminder"><a href="#">Reminders</a></li>
+											<li class="sub-menu__item planning"><a href="#">Planning</a></li>
+										</ul>
+									</li>
+									<li class="dropdown" data-dropdown>
+										<button class="dropdown-toggle" data-dropdown-button>
+											Company
+										</button>
+										<ul class="sub-menu">
+											<li class="sub-menu__item"><a href="#">History</a></li>
+											<li class="sub-menu__item"><a href="#">Our Team</a></li>
+											<li class="sub-menu__item"><a href="#">Blog</a></li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Careers</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">About</a>
+									</li>
+								</ul>
+							</nav>
+							<ul class="header__buttons">
+								<li class="header__buttons-item">
+									<label class="switch-button" for="dark-mode"
+										>Dark Mode
+										<input
+											type="checkbox"
+											name="dark-mode"
+											id="dark-mode"
+											aria-checked="false"
+										/>
+										<span></span>
+									</label>
+								</li>
+								<li class="header__buttons-item">
+									<a class="header__login-btn header__btn">Login</a>
+								</li>
+								<li class="header__buttons-item">
+									<a class="header__register-btn header__btn">Register</a>
+								</li>
+							</ul>
+						</div>
+						<div class="burger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main"></main>
+			<footer class="footer"></footer>
+		</div>
+		<script src="./assets//js/main.min.js"></script>
+	</body>
+</html>
