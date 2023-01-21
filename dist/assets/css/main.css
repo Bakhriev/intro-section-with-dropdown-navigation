@@ -270,11 +270,11 @@ body.dark .header {
 }
 
 body.dark .header__inner .burger span {
-    background-color: rgb(202, 197, 197);
+    background-color: rgb(227, 220, 220);
 }
 
 body.dark .header__inner .burger span::after, body.dark .header__inner .burger span::before {
-    background-color: rgb(202, 197, 197);
+    background-color: rgb(227, 220, 220);
 }
 
 body.dark .header__inner .burger.active span {
@@ -290,15 +290,15 @@ body.dark .header__logo {
 }
 
 body.dark .header .menu__link {
-    color: rgb(202, 197, 197);
+    color: rgb(227, 220, 220);
 }
 
 body.dark .header .menu__link::after {
-    background-color: rgb(202, 197, 197);
+    background-color: rgb(227, 220, 220);
 }
 
 body.dark .header .dropdown-toggle {
-    color: rgb(202, 197, 197);
+    color: rgb(227, 220, 220);
 }
 
 body.dark .header .dropdown-toggle::after {
@@ -310,7 +310,7 @@ body.dark .header .sub-menu {
 }
 
 body.dark .header .sub-menu__item a {
-    color: rgb(202, 197, 197);
+    color: rgb(227, 220, 220);
 }
 
 body.dark .header .sub-menu__item:hover {
@@ -318,11 +318,11 @@ body.dark .header .sub-menu__item:hover {
 }
 
 body.dark .header__buttons-item .switch-button {
-    color: rgb(202, 197, 197);
+    color: rgb(227, 220, 220);
 }
 
 body.dark .header__btn {
-    color: rgb(202, 197, 197);
+    color: rgb(227, 220, 220);
 }
 
 body.dark .header__btn:hover {
@@ -330,20 +330,62 @@ body.dark .header__btn:hover {
 }
 
 body.dark .header__register-btn {
-    border: 1px solid rgb(202, 197, 197);
+    border: 1px solid rgb(227, 220, 220);
 }
 
 body.dark .header__register-btn:hover {
-    background-color: rgb(202, 197, 197);
+    background-color: rgb(227, 220, 220);
     color: rgb(23, 22, 22);
 }
 
+body.dark .header__register-btn:active {
+    color: rgb(227, 220, 220);
+    background-color: rgb(226, 106, 7);
+}
+
 body.dark .sub-menu-mobile .sub-menu__item:active {
-    background-color: rgb(202, 197, 197);
+    background-color: rgb(227, 220, 220);
 }
 
 body.dark .sub-menu-mobile .sub-menu__item:active a {
     color: rgb(31, 41, 55);
+}
+
+body.dark .hero__btn {
+    background-color: rgb(227, 220, 220);
+    border: 2px solid rgb(227, 220, 220);
+    color: rgb(31, 41, 55);
+}
+
+body.dark .hero__btn:hover {
+    background-color: transparent;
+    border: 2px solid rgb(227, 220, 220);
+    color: rgb(227, 220, 220);
+}
+
+body.dark .hero__btn:active {
+    color: rgb(227, 220, 220);
+    background-color: rgb(226, 106, 7);
+}
+
+body.dark .hero__title {
+    color: rgb(227, 220, 220);
+}
+
+body.dark .hero__text {
+    color: rgb(227, 220, 220);
+}
+
+body.dark .hero .right img {
+    filter: contrast(1.3) brightness(1.1);
+}
+
+body.dark .footer__text {
+    color: rgba(114, 103, 103, 0.9);
+}
+
+body.dark .footer__text a {
+    color: rgb(227, 220, 220);
 }
 
 body {
@@ -432,6 +474,9 @@ body {
 
 .header__register-btn, .header__login-btn {
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .header__login-btn {
@@ -452,6 +497,12 @@ body {
 .header__register-btn:hover {
     background-color: rgb(23, 22, 22);
     color: rgb(255, 255, 255);
+}
+
+.header__register-btn:active {
+    transition: none;
+    color: rgb(31, 41, 55);
+    background-color: rgb(234, 164, 107);
 }
 
 .menu {
@@ -833,11 +884,20 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.2s ease-in-out all;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .hero__btn:hover {
     background-color: transparent;
     color: rgb(31, 41, 55);
+}
+
+.hero__btn:active {
+    transition: none;
+    color: rgb(31, 41, 55);
+    background-color: rgb(234, 164, 107);
 }
 
 @media screen and (max-width: 940px) {
@@ -882,6 +942,29 @@ body {
         max-width: 80px;
         width: 100%;
     }
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(31, 41, 55);
+}
+
+@media screen and (max-width: 420px) {
+    .footer__text {
+        font-size: 10px;
+    }
+}
+
+.footer__text a {
+    color: rgb(23, 22, 22);
+    text-decoration: underline;
 }
 
 @keyframes dropdownAnimate {
