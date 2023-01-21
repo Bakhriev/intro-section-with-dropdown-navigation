@@ -1,11 +1,25 @@
 const switchBtn = document.querySelector(".switch-button")
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)")
 const checkbox = switchBtn.querySelector("[aria-checked]")
+const dropdownsMobile = document.querySelectorAll(".dropdown-mobile")
+
+dropdownsMobile.forEach(dropdownMobile => {
+	dropdownMobile.addEventListener("click", e => {
+		const mobileSubMenu = dropdownMobile.querySelector(".sub-menu-mobile")
+		if (!mobileSubMenu.style.maxHeight) {
+			mobileSubMenu.style.maxHeight = mobileSubMenu.scrollHeight + "px"
+		} else if (
+			e.target.closest(".sub-menu__item") &&
+			mobileSubMenu.style.maxHeight
+		) {
+		} else {
+			mobileSubMenu.style.maxHeight = ""
+		}
+	})
+})
 
 document.addEventListener("DOMContentLoaded", () => {
-	console.log(prefersDarkScheme.matches)
 	if (prefersDarkScheme.matches) {
-		console.log(123)
 		checkbox.setAttribute("aria-checked", true)
 		document.body.classList.add("dark")
 	} else {
@@ -28,17 +42,16 @@ switchBtn.addEventListener("click", () => {
 
 function burgerMenu() {
 	const burger = document.querySelector(".burger")
-	const menu = document.querySelector(".menu")
+	const navbar = document.querySelector(".header__navigation")
 	const overlay = document.querySelector(".overlay")
 
 	burger.addEventListener("click", () => {
-		menu.classList.toggle("active")
 		burger.classList.toggle("active")
 		overlay.classList.toggle("overlay-active")
+		navbar.classList.toggle("active")
 	})
 	window.addEventListener("resize", () => {
 		if (window.innerWidth > 991.98) {
-			menu.classList.remove("active")
 			burger.classList.remove("active")
 			overlay.classList.remove("overlay-active")
 		}
