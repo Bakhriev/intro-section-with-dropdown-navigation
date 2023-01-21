@@ -281,8 +281,10 @@ body.dark .header__inner .burger.active span {
     background-color: transparent;
 }
 
-body.dark .header__navigation {
-    background-color: rgb(31, 41, 55);
+@media screen and (max-width: 992px) {
+    body.dark .header__navigation {
+        background-color: rgb(31, 41, 55);
+    }
 }
 
 body.dark .header__logo {
