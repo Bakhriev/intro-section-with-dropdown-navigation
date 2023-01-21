@@ -131,6 +131,7 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.2s ease-in-out all;
+    z-index: 2;
 }
 
 .overlay-active {
@@ -394,7 +395,6 @@ body.dark .footer__text a {
 body {
     transition: 0.3s ease-in-out all;
     position: relative;
-    overflow-x: hidden;
 }
 
 .header {
@@ -435,7 +435,7 @@ body {
 
 @media screen and (max-width: 992px) {
     .header__navigation {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         margin-left: 0;
@@ -696,10 +696,6 @@ body {
 
 .sub-menu__item:hover a {
     color: #fff;
-}
-
-.main {
-    overflow-x: hidden;
 }
 
 .hero {
