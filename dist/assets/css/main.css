@@ -173,7 +173,7 @@ body {
     height: 26px;
     border-radius: 30px;
     background-color: rgb(168, 170, 193);
-    transition: background-color 0.3s linear;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .dark-toggle::after {
