@@ -49,6 +49,8 @@ select {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul,
@@ -897,7 +899,7 @@ body {
 
 @media screen and (max-width: 375px) {
     .hero__title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -963,7 +965,7 @@ body {
 
 @media screen and (max-width: 940px) {
     .hero__btn {
-        padding: 15px 25px;
+        padding: 10px 17px;
     }
 }
 
@@ -975,7 +977,8 @@ body {
 
 @media screen and (max-width: 400px) {
     .hero__btn {
-        padding: 10px 20px;
+        padding: 8px 12px;
+        font-size: 1rem;
     }
 }
 
