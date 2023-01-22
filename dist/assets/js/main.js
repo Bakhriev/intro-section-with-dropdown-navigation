@@ -49,14 +49,12 @@ function burgerMenu() {
 		burger.classList.toggle("active")
 		overlay.classList.toggle("overlay-active")
 		navbar.classList.toggle("active")
-		document.body.classList.toggle("locked")
 	})
 
 	overlay.addEventListener("click", () => {
 		navbar.classList.remove("active")
 		overlay.classList.remove("overlay-active")
 		burger.classList.remove("active")
-		document.body.classList.remove("locked")
 	})
 
 	window.addEventListener("resize", () => {
@@ -64,7 +62,6 @@ function burgerMenu() {
 			burger.classList.remove("active")
 			navbar.classList.remove("active")
 			overlay.classList.remove("overlay-active")
-			document.body.classList.remove("locked")
 		}
 	})
 }
