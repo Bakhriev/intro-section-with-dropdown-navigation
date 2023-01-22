@@ -169,7 +169,11 @@ body {
     height: 26px;
     border-radius: 30px;
     background-color: rgb(168, 170, 193);
+<<<<<<< HEAD
     transition: background-color 0.2s ease-in-out;
+=======
+    transition: background-color 0.3s ease-in-out;
+>>>>>>> 1adaff300f39fd70fa1bc84bd40cb951e01b4d5b
 }
 
 .dark-toggle::after {
@@ -184,7 +188,7 @@ body {
     width: 20px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    transition: left 0.3s ease-in-out;
+    transition: left 0.2s ease-in-out;
 }
 
 .switch-button input[aria-checked=true] ~ .dark-toggle::after {
